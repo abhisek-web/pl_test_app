@@ -21,5 +21,6 @@ if st.button('Get Players Data'):
 
 options = st.sidebar.multiselect(
     'Choose models to predict your team',
-    ['Decision Tree', 'XG Boost Regressor', 'CatBoost', 'LightGBM', "Hugging Face"]
+    ['Decision Tree', 'XG Boost Regressor', 'CatBoost', 'LightGBM', "Hugging Face"],
+    placeholder= "Choose an Option"
 )
