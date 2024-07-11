@@ -19,7 +19,7 @@ if st.button('Get Players Data'):
     players_df = get_players_data()
     st.write(players_df)
 
-options = st.sidebar.multiselect(
+options = st.sidebar.selectbox(
     'Choose models to predict your team',
     ['Decision Tree', 'XG Boost Regressor', 'CatBoost', 'LightGBM', "Hugging Face"],
     placeholder= "Choose an Option"
